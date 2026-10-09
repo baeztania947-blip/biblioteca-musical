@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.app-header h1 {
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.app-header p {
+  color: #7f8c8d;
+}
+
+.contenido-principal {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.lista-pokemon-container {
+  flex: 1;
+  min-width: 280px;
+  background: #fafbfc;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 15px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.lista-pokemon-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #34495e;
+}
+
+.lista-pokemon {
+  list-style: none;
+}
+
+.pokemon-item {
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+
+.pokemon-item:hover {
+  background-color: #3498db;
+  color: #ffffff;
+  border-color: #3498db;
+}
+
+.visor-pokemon {
+  flex: 1.2;
+  min-width: 280px;
+  background: #fafbfc;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 350px;
+}
+
+.visor-pokemon.placeholder {
+  color: #95a5a6;
+  font-style: italic;
+}
+
+.detalle-card {
+  width: 100%;
+}
+
+.detalle-card h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.pokemon-imagen {
+  width: 130px;
+  height: 130px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 3px solid #e1e4e8;
+  margin-bottom: 15px;
+}
+
+.detalle-info {
+  text-align: left;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e1e4e8;
+}
+
+.detalle-info p {
+  margin-bottom: 8px;
+}
+
+.tipos-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.tipo-badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #95a5a6;
+}
+
+/* Colores orientativos según tipo básico */
+.tipo-grass { background-color: #2ecc71; }
+.tipo-fire { background-color: #e74c3c; }
+.tipo-water { background-color: #3498db; }
+.tipo-poison { background-color: #9b59b6; }
+.tipo-electric { background-color: #f1c40f; color: #333; }
+.tipo-bug { background-color: #1abc9c; }
